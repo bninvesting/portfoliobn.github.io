@@ -12,7 +12,7 @@ export function Hero() {
         className="absolute inset-0 size-full object-cover"
       />
       <div className="absolute inset-0 bg-[image:var(--gradient-fade-dark)]" />
-      <div className="absolute inset-0 bg-background/50" />
+      <div className="absolute inset-0 bg-background/25" />
 
       <div className="relative mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-5 pt-24 pb-20 text-center">
         <span className="section-label">Desde 2020 · São Paulo</span>
