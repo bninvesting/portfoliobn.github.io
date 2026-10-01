@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: .  # Alterado para ler os arquivos direto da raiz do projeto
 
       - name: Deploy to GitHub Pages
         id: deployment
