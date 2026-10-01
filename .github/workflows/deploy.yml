@@ -30,7 +30,7 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install
+        run: bun install --frozen-lockfile
 
       - name: Build
         run: bun run build
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Alterado para ler os arquivos direto da raiz do projeto
+          path: ./dist  # Voltamos para a pasta dist oficial do Vite
 
       - name: Deploy to GitHub Pages
         id: deployment
