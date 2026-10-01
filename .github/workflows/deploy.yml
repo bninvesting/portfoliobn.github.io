@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Voltamos para a pasta dist oficial do Vite
+          path: .output/public  # Mudamos para a pasta oficial do TanStack Start
 
       - name: Deploy to GitHub Pages
         id: deployment
